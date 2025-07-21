@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --pinheiro: #013220;
+    --verdinho: #3d6d5b;
+    --brancoFosco: #ededed;
+    --glassLiquid: rgba(255, 255, 255, 0.03);
+    --branco: #ffffff;
+    --dourado: #ffdc40;
+    --pretoFosco: #161616;
+    --boxShadowForLinks: 0 0 10px rgba(0, 0, 0, 0.219);
+    --boxShadowForBoxes: 0 0 10px rgba(0, 0, 0, 0.13);
+    --textShadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    --boxBorder: 2px solid #cccccc;
+    --boxBorderTransparent: 2px solid #f3f3f30a;
+    
+    --image1: url(../imagens/arbusto-espinhoso.jpg);
+    --image2: url(../imagens/paisagem.jpg);
+    --image3: url(../imagens/cactos.jpg);
+
+    --borderButtonRadius: 50px;
+    --borderBoxRadius: 5px;
+    --blurBackdropForBoxes: 5px;
+    --linkFontSize: 13px;
+    --marginSide: 2%;
+    --textSizeH1Span: 2.5rem;
+    --textSizeH1: 2rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5{
+    font-family: Outfit;
+    cursor: default;
+    color: var(--brancoFosco);
+}
+h6{
+    font-family: Poppins;
+    color: var(--dourado);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+p{
+    font-family: Poppins;
+    cursor: default;
+    color: var(--brancoFosco);
+}
+a{
+    font-family: "Montserrat Alternates";
+}
+body{
+    min-height: 100vh;
+    background-color: var(--pretoFosco);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    height: 20%;
+    gap: 10px;
+    background-color: var(--glassLiquid);
+    position: fixed;
+    z-index: 10;
+    backdrop-filter: blur(var(--blurBackdropForBoxes));
+    border-bottom-left-radius: var(--borderButtonRadius);
+    border-bottom-right-radius: var(--borderButtonRadius);
+    border: var(--boxBorderTransparent);
+    border-top: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header h1{
+    display: inline-block;
+    color: var(--branco);
+}
+header .links{
+    background-color: var(--brancoFosco);
+    padding: 2px;
+    border-radius: var(--borderButtonRadius);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .links a{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--pretoFosco);
+    font-size: var(--linkFontSize);
+    transition: 0.2s ease;
+}
+header .leftLink{
+    border-bottom-left-radius: var(--borderButtonRadius);
+    border-top-left-radius: var(--borderButtonRadius);
+}
+header .rightLink{
+    border-bottom-right-radius: var(--borderButtonRadius);
+    border-top-right-radius: var(--borderButtonRadius);
+}
+header .links a:hover{
+    background-color: var(--verdinho);
+    color: var(--brancoFosco);
+    box-shadow: var(--boxShadowForLinks);
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    background-position-x: 100%;
+    background-position-y: 25%;
+    background-size: 1500%;
+    perspective: 1000px;
+    background-color: var(--pretoFosco);
+}
+section .banners{
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+section .banner{
+    min-width: 500px;
+    height: 500px;
+    border: var(--boxBorder);
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderBoxRadius);
+    box-shadow: var(--boxShadowForBoxes);
+    position: relative;
+}
+section .info{
+    color: var(--brancoFosco);
+    text-shadow: var(--textShadow);
+}
+section .info h1{
+    font-size: var(--textSizeH1);
+}
+section .banners .card {
+    margin: 0 var(--marginSide);
+    display: flex;
+}
+section h6{
+    margin-bottom: 20px;
+}
+.foto1{
+    background-image: url(../imagens/turma.jpg);
+}
+
+.foto2{
+    background-image: url(../imagens/ufob-lembranca.jpg);
+}
+
+.foto3{
+    background-image: url(../imagens/reuniao.jpg);
+}
+
+.foto4{
+    background-image: url(../imagens/ufob-experiencia.jpg);
+}
