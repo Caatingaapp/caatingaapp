@@ -144,11 +144,11 @@ section .banner{
     position: relative;
 }
 section .ufob{
-    background-image: url(../imagens/ufob.jpg);
+    background-image: url(imagens/ufob.jpg);
 }
 
 section .engenheiro{
-    background-image: url(../imagens/engenheiro.jpg);
+    background-image: url(imagens/engenheiro.jpg);
 }
 section .info{
     color: var(--brancoFosco);
