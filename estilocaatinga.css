@@ -16,7 +16,7 @@
     --boxBorderTransparent: 2px solid #f3f3f30a;
     
     --image1: url(../imagens/arbusto-espinhoso.jpg);
-    --image2: url(../imagens/paisagem.jpg);
+    --image2: url(imagens/paisagem.jpg);
     --image3: url(../imagens/cactos.jpg);
 
     --borderButtonRadius: 50px;
