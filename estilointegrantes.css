@@ -136,7 +136,7 @@ section .banner{
     background-size: cover;
     border-radius: var(--borderBoxRadius);
     box-shadow: var(--boxShadowForBoxes);
-    background-image: url(../imagens/grupo.jpg);
+    background-image: url(imagens/grupo.jpg);
     transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     animation: moving 10s linear infinite;
