@@ -112,7 +112,7 @@ section{
     background-position-y: 25%;
     background-size: 1500%;
     perspective: 1800px;
-    background-image: var(--image1);
+    background-image: url(imagens/arbusto-espinhoso.jpg);
 }
 section .banner{
     min-width: 300px; max-width: 500px;
